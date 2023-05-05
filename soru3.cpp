@@ -11,8 +11,8 @@ ListNode* birlestir(ListNode* l, ListNode* l2) {
 
     while (l0 && l2) {
         if (l0->val < l2->val) {
-            current->next = l1;
-            l0 = l1->next;
+            current->next = l0;
+            l0 = l0->next;
         } else {
             current->next = l2;
             l2 = l2->next;
